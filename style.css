@@ -25,12 +25,18 @@ html, body{
 nav{
     display: flex;
     padding: 1.9rem;
+    height: 200px;
     margin-bottom: 2vh;
     flex-direction: row;
     justify-content: flex-end;
     gap: 1rem;
     color: #fff;
     list-style-type: none;
+}
+
+.hoverNav:hover{
+    color: #e53939;
+    font-size: 16.5px;
 }
 
 nav > li > a {
@@ -89,6 +95,25 @@ nav > li > a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70%;
+    font-size: 25px;
+}
+
+.gostos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 20px 0 20px 0; 
+}
+
+.titleGostos{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.textoGostos{
     width: 70%;
     font-size: 25px;
 }

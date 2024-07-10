@@ -24,19 +24,25 @@ html, body{
 
 nav{
     display: flex;
-    padding: 1.9rem;
-    height: 200px;
+    padding: 1rem;
+    height: 7vh;
+    width: 100%;
     margin-bottom: 2vh;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     gap: 1rem;
+    background-color: #000;
     color: #fff;
     list-style-type: none;
+    position: fixed;
+    top: 0;
 }
 
 .hoverNav:hover{
     color: #e53939;
     font-size: 16.5px;
+    text-decoration: none;
 }
 
 nav > li > a {
@@ -53,6 +59,8 @@ nav > li > a {
     align-items: center;
     color: #fff;
     margin-bottom: 20%;
+    margin-top: 15%;
+    
     
 }
 
@@ -117,3 +125,4 @@ nav > li > a {
     width: 70%;
     font-size: 25px;
 }
+

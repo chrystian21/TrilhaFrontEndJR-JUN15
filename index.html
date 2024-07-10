@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <li ><a class="hoverNav" href="#home">Home</a></li>
-        <li ><a class="hoverNav" href="#">Sobre</a></li>
-        <li ><a class="hoverNav" href="#">Gostos Pessoais</a></li>
-        <li ><a class="hoverNav" href="#">Motivações</a></li> 
+        <li ><a class="hoverNav" href="#sobre">Sobre</a></li>
+        <li ><a class="hoverNav" href="#gostos">Gostos Pessoais</a></li>
+        <li ><a class="hoverNav" href="#motivacoes">Motivações</a></li> 
     </nav>
     <section class="Home">
         <div class="containerHome" id="home">
@@ -22,43 +22,43 @@
             </div>
             <div class="textHome">
                 <p>Olá, meu nome é Chrystian, tenho 20 anos  e sou estudante 
-                de análise e desenvolvimento de sistemas,  além disso também futuro desenvolvedor
-                front-end. </p>
+                de análise e desenvolvimento de sistemas,  além disso também futuro <span>desenvolvedor
+                front-end</span>. </p>
             </div>    
         </div>
     </section>
 
     <div class="divisao"></div>
     
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="titleSobre">
             <p><b>Sobre</b></p>
         </div>
         <div class="textSobre">
-            <p>Sou um estudante de análise e desenvolvimento de sistemas, 
-                meu objetivo é me tornar um desenvolvedor front-end ou 
-                full stack, no momento gosto mais de trabalhar no front-end mas sei
-                a importancia de conhecer também o back-end.
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas.
+                 Meu objetivo é me tornar um <span>desenvolvedor front-end</span>
+                  ou <span>full stack</span>. No momento, gosto mais de trabalhar no
+                   front-end, mas reconheço a importância de conhecer também o back-end.
             </p>
         </div>
     </section>
 
     <div class="divisao"></div>
 
-    <section class="gostos">
+    <section class="gostos" id="gostos">
         <div class="titleGostos">
             <p><b>Gostos Pessoais</b></p>
         </div>
         <div class="textoGostos">
-            <p>Meus principais hobbies são desenhar e jogar, são hobbies que me acompanham
+            <p>Meus principais hobbies são <span>desenhar</span> e <span>jogar</span>, são hobbies que me acompanham
                 a vida inteira, o desenho é algo que eu gosto desde pequeno e sempre que tenho
                 um tempo livre eu gosto de rabiscar um pouco. <br>
-                Meu primeiro contato com jogos foi bem cedo quando eu tinha entre 4/5 anos eu
+                Meu primeiro contato com jogos foi bem cedo quando eu tinha entre 4 e 5 anos eu
                 ganhei meu super nintendo que foi meu primeiro console um dos primeiros jogos
                 que tenho lembrança é o super mario world. 
             </p>
         </div>
-        <div id="carouselExampleSlidesOnly m-15" class="carousel slide align-self-center" data-ride="carousel" style="display: flex; justify-content: center; align-items: center; width: 500px; height: 500px; margin-left: 200px;">
+        <div id="carouselExampleSlidesOnly m-15"  class="carousel slide align-self-center" data-ride="carousel" style="display: flex; justify-content: center; align-items: center; width: 500px; height: 500px; margin-left: 200px;">
             <div class="carousel-inner display: flex; justify-content: center; align-items: center;">
                 <div class="carousel-item active display: flex; justify-content: center; align-items: center;">
                     <img class="imgCarossel" src="/assets/foto 01.jpeg" alt="First slide" style="width: 350px; height: 350px; display: flex; display: flex; justify-content: center; align-items: center;">
@@ -75,19 +75,37 @@
 
     <div class="divisao"></div>
 
-    <section class="motivacoes">
+    <section class="motivacoes" id="motivacoes">
         <div class="titleMotivacoes">
             <p>Motivações</p>
         </div>
+        <div class="textMotivacoes">
+            <p>Minha principal motivação para entrar na comunidade da
+                <span>Código Certo Coders</span> é a oportunidade de autodesenvolvimento
+                 , tanto na parte profissional quanto na pessoal. Além disso,
+                  vejo a chance de ajudar e interagir com outras pessoas que,
+                   assim como eu, estão começando na área.
+            </p>
+        </div>
+    </section>
+
+    <div class="divisao"></div>
+
+    <section class="contato">
+        <div class="titleContatos">
+            <h2>Contatos</h2>
+        </div>
+        <a class="email" href="mailto:Chrystiancarlosdasilva@gmail.com" style="margin-bottom: 25px; padding: 10px;"><span><p>E-mail:Chrystiancarlosdasilva@gmail.com</p></span></a>
+        <div class="contatosIcons">
+            
+            <a href="https://wa.link/0z7km4" target="_blank"><img src="/assets/whatsappLogo.webp" alt="logo whatsapp" class="imgContatos1"></a>
+            <a href="https://www.linkedin.com/in/chrystian-carlos-453949277" target="_blank"><img src="/assets/linkedlnLogo.webp" alt="logo linkedin" class="imgContatos2"></a>
+        </div> 
     </section>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        $('.carousel').carousel({
-             interval: 3000
-         }) 
-     </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ html, body{
     width: 100%;
     background-color: #000;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .divisao{
@@ -178,7 +179,7 @@ span{
 
 @media (max-width: 1200px) {
     .containerHome, .textHome, .imgHome, .textSobre, .textoGostos, .textMotivacoes {
-        width: 100%;
+        width: 90%;
         font-size: 24px;
     }
     
@@ -190,8 +191,7 @@ span{
 
 @media (max-width: 768px) {
     body{
-        width: 80%;
-        overflow-x: none;
+        justify-content: center;
     }
 
     nav {
@@ -223,7 +223,8 @@ span{
 
     .sobre, .gostos, .motivacoes, .contato {
         padding: 2rem;
-        margin-left: 100px;
+        width: 100%;
+        justify-content: center;
     }
 
     .titleSobre, .titleGostos, .titleMotivacoes {
@@ -245,69 +246,35 @@ span{
 
     .divisao {
         width: 100%;
-        margin-left: 75px;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 480px) {
-    nav {
-        padding: 0.5rem;
+
+    .hoverNav:hover{
+        color: #db4747;
+        font-size: 10.5px;
+        text-decoration: none;
     }
 
-    .containerHome {
-        margin-top: 12%;
-        margin-bottom: 5%;
-    }
-
-    .minhaFoto{
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-    }
-
-    .textHome, .imgHome {
+    .sobre, .gostos, .motivacoes{
         width: 100%;
-        font-size: 18px;
+        
     }
 
-    .sobre, .gostos, .motivacoes, .contato {
-        padding: 1rem;
+    .textSobre{
+        width: 90%;
     }
 
-    .titleSobre, .titleGostos, .titleMotivacoes {
-        font-size: 20px;
-    }
-
-    .textSobre, .textoGostos, .textMotivacoes {
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .minhaFoto {
-        width: 100%;
-    }
-
-    .divisao {
-        width: 100%;
-        margin-left: 10px;
+    .textGostos{
+        width:100%;
     }
 
     .email{
         text-wrap: nowrap;
     }
+
+    
 }
 
-@media (max-width: 430px) {
-    .minhaFoto{
-        display: none;
-    }
-
-    .containerHome{
-        justify-content: center;
-    }
-
-    .textHome, .textMotivacoes, .textSobre, .textoGostos{
-        width: 100%;
-        margin-right: 50px;
-    }
-}

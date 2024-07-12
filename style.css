@@ -10,6 +10,7 @@
 html, body{
     width: 100%;
     background-color: #000;
+    box-sizing: border-box;
 }
 
 .divisao{
@@ -175,64 +176,138 @@ span{
     display: none;
 }
 
-@media (max-width: 750px) {
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imgHome{
-    margin-top: 10vh;
-    width: 60%;
+@media (max-width: 1200px) {
+    .containerHome, .textHome, .imgHome, .textSobre, .textoGostos, .textMotivacoes {
+        width: 100%;
+        font-size: 24px;
+    }
     
+    .divisao {
+        width: calc(100% - 80px - 80px);
+        margin-left: 80px;
+    }
 }
 
-.minhaFoto{
-    width: 250px;
-    height: 250px;
-    margin-left: 125px;
+@media (max-width: 768px) {
+    body{
+        width: 80%;
+        overflow-x: none;
+    }
 
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 10px;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    nav > li {
+        margin-left: 10px;
+    }
+
+    .containerHome {
+        flex-direction: row;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .textHome{
+        width: 70%;
+    }
+
+    .textHome, .imgHome {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .sobre, .gostos, .motivacoes, .contato {
+        padding: 2rem;
+        margin-left: 100px;
+    }
+
+    .titleSobre, .titleGostos, .titleMotivacoes {
+        font-size: 25px;
+    }
+
+    .textSobre{
+        text-align:center;
+    }
+
+    .textSobre, .textoGostos, .textMotivacoes {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .minhaFoto {
+        width: 80%;
+    }
+
+    .divisao {
+        width: 100%;
+        margin-left: 75px;
+    }
 }
 
-.textHome{
-    display: flex;
-    font-size: 15px;
-    width: 45%;
-    margin-top: 50px;
-    margin-left: 200px;
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem;
+    }
+
+    .containerHome {
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+
+    .minhaFoto{
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
+
+    .textHome, .imgHome {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .sobre, .gostos, .motivacoes, .contato {
+        padding: 1rem;
+    }
+
+    .titleSobre, .titleGostos, .titleMotivacoes {
+        font-size: 20px;
+    }
+
+    .textSobre, .textoGostos, .textMotivacoes {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .minhaFoto {
+        width: 100%;
+    }
+
+    .divisao {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .email{
+        text-wrap: nowrap;
+    }
 }
 
-.textMotivacoes, .textoGostos, .textSobre {
-    font-size: 20px;
-    margin-left: 125px;
-    width: 100%;
-}
+@media (max-width: 430px) {
+    .minhaFoto{
+        display: none;
+    }
 
-.titleGostos, .titleMotivacoes, .titleSobre, .titleContatos{
-    margin-left: 125px;
-    
-}
+    .containerHome{
+        justify-content: center;
+    }
 
-
-.divisao{
-    margin-left: 100px;
-    width: 80%;
-}
-
-.titleContatos{
-    margin-left: 125px;
-}
-
-.contatosIcons{
-    margin-left: 125px;
-}
-
-.email{
-    margin-left: 125px;
-    text-wrap: nowrap;
-   
-}
-
+    .textHome, .textMotivacoes, .textSobre, .textoGostos{
+        width: 100%;
+        margin-right: 50px;
+    }
 }

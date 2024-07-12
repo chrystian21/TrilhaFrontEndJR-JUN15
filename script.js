@@ -1,4 +1,7 @@
 const nav = document.querySelector(".nav")
+const menu = document.getElementById("burguer")
+const itemsNav = document.getElementById("itemsNav")
+const hoverNav = document.querySelector(".hoverNav")
 
 //função que determina a velocidade do carrossel
 $('.carousel').carousel({
@@ -21,4 +24,5 @@ window.addEventListener("scroll", function() {
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 }, false);
+
 

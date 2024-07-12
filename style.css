@@ -252,6 +252,10 @@ span{
 
 @media (max-width: 480px) {
 
+    .hoverNav{
+        padding: 10px;
+    }
+
     .hoverNav:hover{
         color: #db4747;
         font-size: 10.5px;
